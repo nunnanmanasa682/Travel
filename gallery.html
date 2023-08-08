@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HodosMania</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "Font/Fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "CSS/Normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "CSS/Utillity.css">
+        <link rel = "stylesheet" href = "CSS/Style.css">
+        <link rel = "stylesheet" href = "CSS/Responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "Index.html" class = "site-brand">
+                    Hodos<span>Mania</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "Index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "Blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "About.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "Contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Gallery</h1>
+                    <p>We all know that travel quotes can be powerful. From inspirational travel quotes to motivational quotes about traveling we find that other people often say the words better than we can so we put together these inspiring words of wisdom with our favorite quote photos.</p>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- gallery section -->
+        <div id = "gallery" class = "py-4">
+            <div class = "container">
+                <div class = "gallery-row">
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-1.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-2.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-3.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-4.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-5.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-6.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-7.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-8.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-9.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of gallery section -->
+
+        <!-- img modal -->
+        <div id = "img-modal-box">
+            <div id = "img-modal">
+                <button type = "button" id = "modal-close-btn" class = "flex">
+                    <i class = "fas fa-times"></i>
+                </button>
+                <button type = "button" id = "prev-btn" class = "flex">
+                    <i class = "fas fa-chevron-left"></i>
+                </button>
+                <button type = "button" id = "next-btn" class = "flex">
+                    <i class = "fas fa-chevron-right"></i>
+                </button>
+                <img src = "images/gallery-1.jpg">
+            </div>
+        </div>
+        <!-- end of img modal -->
+
+        <!-- popular places section -->
+        <section id = "popular" class = "py-4">
+            <div class = "title-wrap">
+                <span class = "sm-title">know about some coo destination</span>
+                <h2 class = "lg-title">Popular Places</h2>
+            </div>
+
+            <div class = "popular-row">
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-1.jpg" alt = "">
+                    <div>
+                        <span>Eiffel Tower, Paris</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">For 130 years, the Eiffel Tower has been a powerful and distinctive symbol of the city of Paris, and by extension, of France. At first, when it was built for the 1889 World's Fair, it impressed the entire world by its stature and daring design, and symbolized French know-how and industrial genius.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-2.jpg" alt = "">
+                    <div>
+                        <span>Machu Picchu, Peru</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">A symbol of the Incan Empire and built around 1450AD, Machu Picchu was designated a UNESCO World Heritage Site in 1983 and was named one of the New Seven Wonders of the World in 2007.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-3.jpg" alt = "">
+                    <div>
+                        <span>Acropolis, Athens</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">The Acropolis of Athens is the most striking and complete ancient Greek monumental complex still existing in our times. It is situated on a hill of average ..</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-4.jpg" alt = "">
+                    <div>
+                        <span>Bali, Indonesia</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali ...</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-5.jpg" alt = "">
+                    <div>
+                        <span>Dubai, United Arab Emirates</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">The United Arab Emirates (UAE) is situated in the Southeast of the Arabian Peninsula, bordering Oman and Saudi Arabia. In December 1971, the UAE became a federation of six emirates - Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al-Quwain, and Fujairah, while the seventh emirate, Ras Al Khaimah, joined the federation in 1972.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-6.jpg" alt = "">
+                    <div>
+                        <span>Bhutan</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Bhutan, landlocked country of south-central Asia, located on the eastern ridges of the Himalayas. Historically a remote kingdom, Bhutan became less isolated in the second half of the 20th century, and consequently the pace of change began to accelerate.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-7.jpg" alt = "">
+                    <div>
+                        <span>Havana, Cuba</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Havana is the capital city, a largest province, a major port, and a leading commercial centre of Cuba.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-8.jpg" alt = "">
+                    <div>
+                        <span>Moskva, Russia</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Moscow is considered the centre of Russian culture, having served as the home of prestigious Russian artists, scientists and sports figures during the course of its history and because of the presence of many different museums, academic and political institutions and theaters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of popular places section -->
+        
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "Index.html" class = "site-brand">
+                        Hodos<span>Mania</span>
+                    </a>
+                    <p class = "text">HodosMania is focused mainly on summarizing trips, mileage, work begin/end locations, and similar activities.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Thailand</a></li>
+                        <li><a href = "#">Australia</a></li>
+                        <li><a href = "#">Maldives</a></li>
+                        <li><a href = "#">Switzerland</a></li>
+                        <li><a href = "#">Germany</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "JS/Script.js"></script>
+        <script>
+            // image modal
+            const allGalleryItem = document.querySelectorAll('.gallery-item');
+            const imgModalDiv = document.getElementById('img-modal-box');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            let imgIndex = 0;
+
+            allGalleryItem.forEach((galleryItem) => {
+                galleryItem.addEventListener('click', () => {
+                    imgModalDiv.style.display = "block";
+                    let imgSrc = galleryItem.querySelector('img').src;
+                    imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                    showImageContent(imgIndex);
+                })
+            });
+
+            // next click
+            nextBtn.addEventListener('click', () => {
+                imgIndex++;
+                if(imgIndex > allGalleryItem.length){
+                    imgIndex = 1;
+                }
+                showImageContent(imgIndex);
+            });
+
+            // previous click
+            prevBtn.addEventListener('click', () => {
+                imgIndex--;
+                if(imgIndex <= 0){
+                    imgIndex = allGalleryItem.length;
+                }
+                showImageContent(imgIndex);
+            });
+
+            function showImageContent(index){
+                imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
+            }
+
+            modalCloseBtn.addEventListener('click', () => {
+                imgModalDiv.style.display = "none";
+            })
+        </script>
+    </body>
+</html>
